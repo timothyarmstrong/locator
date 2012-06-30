@@ -37,4 +37,6 @@ document.addEventListener('DOMContentLoaded', function() {
   navigator.geolocation.watchPosition(handleNewPosition, null,
       { enableHighAccuracy: true, maximumAge: 5000, timeout: 27000});
   
+  window.addEventListener('deviceorientation', handleNewOrientation, false);
+  
 }, false);
