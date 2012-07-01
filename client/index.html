@@ -2,14 +2,84 @@
 <html>
   <head>
     <title>Locator</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" href="css/css.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,
+        maximum-scale=1.0, user-scalable=0" />
     <script src="js/js.js"></script>
   </head>
   <body>
-    <h1>Locator</h1>
+    <header>
+      <h1>Locator</h1>
+    </header>
     
+    <div id="splash">
+      
+      <div class="button button-full">
+        Find a friend
+      </div>
+      
+      or
+      
+      <div class="button">
+        Enter a code
+      </div>
+      
+      <input type="text" id="code" placeholder="Enter code here" />
+      <div class="button button-submit">Enter</div>
+      
+    </div>
     
+    <div id="send-link">
+      
+      <div id="send-link-box">
+        http://XXXXXX/12345
+      </div>
+      
+      or
+      
+      <div class="button button-full">
+        Send them an email
+      </div>
+      
+      <input type="text" id="email-address" placeholder="email@email.com" />
+      <div class="button button-submit">Send</div>
+      
+    </div>
     
+    <div id="connecting">
+      
+      Connecting...
+      
+    </div>
+    
+    <div id="waiting">
+      
+      Waiting...
+      
+    </div>
+    
+    <div id="map">
+      
+      <div class="button button-full">
+        Switch to Arrow
+      </div>
+      
+    </div>
+    
+    <div id="arrow">
+      
+      <div class="button button-full">
+        Switch to Map
+      </div>
+      
+    </div>
+    
+    <footer>
+      <a href="http://github.com/timothyarmstrong/locator">Github</a>
+      <a href="/privacypolicy">Privay Policy</a>
+      <a href="#" id="debug-button">Debug</a>
+    </footer>
     
     <div id="debug">
       <div>Alpha: <span class="debug-alpha"></span></div>
@@ -23,5 +93,6 @@
       <div>Latitude: <span class="debug-latitude"></span></div>
       <div>Location Accuracy: <span class="debug-locationaccuracy"></span></div>
     </div>
+    
   </body>
 </html>
