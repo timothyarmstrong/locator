@@ -42,4 +42,15 @@ document.addEventListener('DOMContentLoaded', function() {
   window.addEventListener('deviceorientation', handleNewOrientation, false);
   */
   
+  // Setup button presses.
+  var buttons = document.querySelectorAll('.button');
+  Array.prototype.forEach.call(buttons, function(button) {
+    button.addEventListener('touchstart', function() {
+      this.classList.add('button-active');
+    }, false);
+    button.addEventListener('touchend', function() {
+      this.classList.remove('button-active');
+    }, false);
+  });
+  
 }, false);
